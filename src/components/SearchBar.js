@@ -1,18 +1,17 @@
 import React from 'react';
 import './SearchBar.css'
 import MaterialButton from "./MaterialButton";
+import MaterialEdit from "./MaterialEdit";
 
 class SearchBar extends React.Component {
   render() {
     return (
         <div className="search-wrapper">
-          <input type="text"
-                 name="search"
-                 placeholder="Find"
-                 className="search-edit"
-                 value={this.props.value}
-                 onChange={this.props.onChange}
-                 onKeyUp={this.props.onKeyUp}
+          <MaterialEdit
+              placeholder='Find'
+              value={this.props.value}
+              onChange={this.props.onChange}
+              onKeyUp={this.props.onKeyUp}
           />
           <MaterialButton
               title='FIND'
