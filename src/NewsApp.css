@@ -2,21 +2,19 @@
     display: none;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', serif;
+    color: #fff;
+    background: #1d1d21;
+}
+
 main {
     display: flex;
     flex-direction: column;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
-    font-size: 1.5em;
-    background: #2b2b2f;
-    color: #a2a2a2;
-}
-
-footer a {
-    color: darkgrey;
+.content {
+    flex: 1 0 auto;
 }

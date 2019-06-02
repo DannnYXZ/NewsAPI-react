@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Sources from "./components/Sources";
 import NoData from "./components/NoData";
 import News from "./components/News";
+import Footer from "./components/Footer";
 
 class NewsApp extends React.Component {
   constructor(props) {
@@ -83,9 +84,9 @@ class NewsApp extends React.Component {
 
   render() {
     return (
+        <body>
         <div className="content">
-          <Header title='Hot News Every Day'/>
-          <main className="content">
+          <Header title='Hot News Every Day'>
             <SearchBar
                 onChange={this.handleSearchChange.bind(this)}
                 onKeyUp={this.handleSearchKeyUP.bind(this)}
@@ -95,6 +96,8 @@ class NewsApp extends React.Component {
                 sources={this.state.sources}
                 onClick={this.handleFilterClick.bind(this)}
             />
+          </Header>
+          <main>
             {this.state.articles.length
                 ? <News articles={this.state.articles}/>
                 : <NoData/>
@@ -105,6 +108,8 @@ class NewsApp extends React.Component {
             }
           </main>
         </div>
+        <Footer/>
+        </body>
     );
   }
 }

@@ -5,10 +5,10 @@ class MaterialButton extends React.Component {
   render() {
     return (
         <button
-            className="search-btn"
+            className={this.props.className || "material-btn"}
             onClick={this.props.onClick}
         >
-          {this.props.title}
+          {this.props.children}
         </button>
     )
   }

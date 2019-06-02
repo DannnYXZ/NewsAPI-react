@@ -4,5 +4,5 @@ import './index.css';
 import NewsApp from './NewsApp';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<NewsApp />, document.getElementById('root'));
+ReactDOM.render(<NewsApp/>, document.getElementById('root'));
 serviceWorker.unregister();

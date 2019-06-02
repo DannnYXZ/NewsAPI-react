@@ -13,10 +13,9 @@ class SearchBar extends React.Component {
               onChange={this.props.onChange}
               onKeyUp={this.props.onKeyUp}
           />
-          <MaterialButton
-              title='FIND'
-              onClick={this.props.onClick}
-          />
+          <MaterialButton onClick={this.props.onClick}>
+            FIND
+          </MaterialButton>
         </div>
     )
   }

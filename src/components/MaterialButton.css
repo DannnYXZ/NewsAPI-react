@@ -1,4 +1,4 @@
-.search-btn {
+.material-btn {
     background-color: #00adf4;
     border-style: none;
     color: #fff;
@@ -8,6 +8,6 @@
     font-size: 1em;
 }
 
-.search-btn:hover {
+.material-btn:hover {
     background-color: #00ad24;
 }
