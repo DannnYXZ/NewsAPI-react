@@ -1,0 +1,17 @@
+header {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    text-align: center;
+}

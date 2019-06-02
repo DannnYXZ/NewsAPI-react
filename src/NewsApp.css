@@ -1,0 +1,22 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    font-size: 1.5em;
+    background: #2b2b2f;
+    color: #a2a2a2;
+}
+
+footer a {
+    color: darkgrey;
+}

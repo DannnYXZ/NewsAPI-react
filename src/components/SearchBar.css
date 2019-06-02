@@ -1,0 +1,11 @@
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.search-edit {
+    width: 70%;
+    height: 40px;
+    font-size: 1.5em;
+    padding-left: 1em;
+}
